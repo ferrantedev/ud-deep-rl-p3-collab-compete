@@ -1,13 +1,6 @@
 # Project 3: Collaboration and competition
 
-In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1.  If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01.  Thus, the goal of each agent is to keep the ball in play.
-
-The task is episodic, and in order to solve the environment, your agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). Specifically,
-
-- After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 2 (potentially different) scores. We then take the maximum of these 2 scores.
-- This yields a single **score** for each episode.
-
-The environment is considered solved, when the average (over 100 episodes) of those **scores** is at least +0.5.
+In this environment, two agents control rackets to bounce a ball over a net. If an agent hits the ball over the net, it receives a reward of +0.1. If an agent lets a ball hit the ground or hits the ball out of bounds, it receives a reward of -0.01.  Thus, the goal of each agent is to keep the ball in play.
 
 Check out the video of the trained agent in action: 
 [![Trained Agents](https://img.youtube.com/vi/Tk6SflL-eKI/0.jpg)](https://www.youtube.com/watch?v=Tk6SflL-eKI)
@@ -22,9 +15,12 @@ Two continuous actions are available, corresponding to movement toward (or away 
 
 ## Rewards
 
-A reward of +1 is provided for collecting a yellow banana, and a reward of -1 is provided for collecting a blue banana.  Thus, the goal of your agent is to collect as many yellow bananas as possible while avoiding blue bananas.  
+The task is episodic, and in order to solve the environment, your agents must get an average score of +0.5 (over 100 consecutive episodes, after taking the maximum over both agents). Specifically,
 
-The task is episodic, and in order to solve the environment, your agent must get an average score of +13 over 100 consecutive episodes, however this notebook attempts to achieve a score of +15
+- After each episode, we add up the rewards that each agent received (without discounting), to get a score for each agent. This yields 2 (potentially different) scores. We then take the maximum of these 2 scores.
+- This yields a single **score** for each episode.
+
+The environment is considered solved, when the average (over 100 episodes) of those **scores** is at least +0.5.
 
 # Getting Started
 
